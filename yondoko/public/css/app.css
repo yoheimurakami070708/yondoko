@@ -465,7 +465,7 @@ mark,
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "窶板�";
+  content: "— ";
 }
 
 .img-fluid {

@@ -248,4 +248,5 @@
     }
   })
 </script>
+<script src="{{ mix('js/fav.js') }}"></script>
 @endsection
