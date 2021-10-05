@@ -37,13 +37,19 @@ $(function(){
       $('.thirdSentence').delay(900).animate({'opacity':'1','animation-interation-count':'3'},300);      
     }
   })
-  // ドロップダウンリスト値取得
-//   let dropdown  =$('.doropdown');
-//   let dropdown-menu  =$('.doropdown-menu');
-//   let dropdown-item  =$('.doropdown-item');
-//   let dropdown-toggle  =$('.doropdown-toggle');
-//   $('.dropdown-menu .dropdown-item').click(function(){
-//     var visibleItem = $('.dropdown-toggle', $(this).closest('.dropdown'));
-//     visibleItem.text($(this).attr('value'));
-// });
+});
+
+$(() =>{
+  $('#first').on('click',()=>{
+    let age = $('#age').val();
+    if(age == "10代"){
+      $('#recommend').append('<h2 class="frH">DIE WITH ZERO</h2>','<img src="images/fr1.png" class="frImg">')
+    };
+  });
+  $('#recommend').on('click',e =>{
+    if(e.target.nodeName !== 'H2' || !confirm('Are you sure')){
+      return;
+    }
+    $('#recommend').remove();
+  })
 });

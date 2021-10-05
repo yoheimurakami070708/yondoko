@@ -17,7 +17,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">Menu</a>
+      <a class="navbar-brand" href="#">YONDOKO</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="
       #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
               Side Menu
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">最初の１冊</a>
+              <a class="dropdown-item" href="#nav-first">最初の１冊</a>
               <a class="dropdown-item" href="#">要約チャンネル</a>
               <a class="dropdown-item" href="#">読書アイテム</a>
             </div>
@@ -104,8 +104,8 @@
           <div class="container">
             <div class="mb-5 row">
               <div class="col-sm-8 f1_scroll">
-                <h3>カレンダー機能</h3>
-                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <h3>todoリストで記録</h3>
+                <p>自分なりの言葉にまとめると記憶の定着率が上がります。ページ数や時間の記録も可能です。</p>
               </div>
               <div class="col-sm-4">
                 <img src="images/function1.png" class="w-100 rounded-circle">
@@ -126,8 +126,13 @@
           <h2><a class="loginHead">Login</a></h2>
           <p class="firstSentence">YONDOKOは読書を始めるきっかけと習慣づくりのために作成しました。読書の素晴らしさを一人でも多くの人に知ってもらいたいです。</p>
           <p class="secondSentence">思考に気を付けなさい。サレはいつか言葉になるから。言葉に気をつけなさい。それはいつか行動になるから。行動に気をつけなさい。それはいつか習慣になるから。ーマザーテレサー</p>
-          <button type="submit" name="btn" class="btn  bg-info text-white formBtn">ログイン</button>
-          <p class="thirdSentence">新規登録はこちら←</p>
+          <button type="submit" name="btn" class="btn  bg-light formBtn">
+          <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a>
+          
+          </button>
+          <p class="thirdSentence">
+          <a class="nav-link" href="{{ route('register') }}">{{ __('新規登録はこちら←') }}</a>
+          </p>
         </div>
       </div>
       <!-- 最初の１冊 -->
@@ -190,7 +195,7 @@
                 <div class="card-body">
                   <h5 class="card-title">中田敦彦のYouTube大学</h5>
                   <p class="card-text">僕の世代では武勇伝、下の世代ではレディオフィッシュで有名なオリラジのあっちゃんが持ち前のトーク力で本の内容をプレゼンしてくれます。</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <a href="https://www.youtube.com/c/NKTofficial" class="card-text">→詳細はこちら</a>
                 </div>
               </div>
             </div>
@@ -199,7 +204,7 @@
                 <div class="card-body">
                   <h5 class="card-title">サムの本解説ch</h5>
                   <p class="card-text">2021年８月時点で登録者数35万人と圧倒的人気を誇る要約チャンネルです。ついつい見たくなるサムネ、要点を絞った割りやすい解説、聴きやすいトーンの話し方が魅力です。</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <a href="https://www.youtube.com/channel/UCcdd3kS52T9Zyo-SWfj86bA" class="card-text">→詳細はこちら</a>
                 </div>
               </div>
               <div class="col-md-4">
@@ -223,7 +228,7 @@
             <div class="card-body">
               <h5 class="card-title">コーヒー</h5>
               <p class="card-text">コーヒーも読書と同様にリラックス効果があります。コーヒーの匂いを嗅ぐと右脳の情緒部分が刺激されて「アルファ波」というものが生じてリラックスできます。</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <a href="http://anchor2fullsail.shop-pro.jp/" class="card-text"><small class="text-muted">地元気仙沼市にあるアンカーコーヒーネット販売←</small></a>
             </div>
           </div>
           <div class="card">
@@ -233,7 +238,7 @@
             <div class="card-body">
               <h5 class="card-title">BGM</h5>
               <p class="card-text">通常の音楽は読書の際に逆効果なケースが多いですが、雨や波の音などの自然音は集中力を高めます。</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <a href="https://www.spotify.com/jp/premium/?utm_source=jp-ja_brand_contextual_text&utm_medium=paidsearch&utm_campaign=alwayson_apac_jp_performancemarketing_core_brand+contextual+text+exact+jp-ja+google&gclid=CjwKCAjwzOqKBhAWEiwArQGwaMxp5D-Kp5emPHgIzvraC1m00f6nN2qIHn-tMeQaBvz2Z3ceZXdL9BoCv8QQAvD_BwE&gclsrc=aw.ds" class="card-text"><small class="text-muted">spotify←</small></a>
             </div>
           </div>
           <div class="card">
@@ -243,7 +248,7 @@
             <div class="card-body">
               <h5 class="card-title">Kindle</h5>
               <p class="card-text">紙書籍の方が記憶の定着がいいのですが、持ち運びやすさやスペースを考えると購入せずにはいられません。</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <a href="https://www.amazon.co.jp/dp/B08N41Y4Q2?&tag=googhydr-22&ref=pd_sl_96ciogash1_e_p51&adgrpid=111006960691&hvpone=&hvptwo=&hvadid=452017894470&hvpos=&hvnetw=g&hvrand=7522545869550013820&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009127&hvtargid=kwd-332998515799&hydadcr=28344_11467286&gclid=CjwKCAjwzOqKBhAWEiwArQGwaHpeHwL_6zfWzZ7oGtJnrCk643mVfo3jjZeFni6QofsDgB2-71AFQhoCya4QAvD_BwE" class="card-text"><small class="text-muted">kindle paperwhite←</small></a>
             </div>
           </div>
         </div>
@@ -318,7 +323,7 @@
     <div class="card-img-overlay bg-info">
       <h5 class="card-title">Writen by YOHEI MURAKAMI</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text">portfolio</p>
+      <a href="https://yohei-portfolio.work/#link2" class="card-text">portfolio</a>
     </div>
   </div>
 

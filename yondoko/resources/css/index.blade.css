@@ -172,7 +172,7 @@ h2{
 }
 .thirdSentence{
   text-align: center;
-  
+  opacity: 0;
   cursor: pointer;
 }
 
@@ -191,12 +191,6 @@ h2{
   position: relative;
   bottom: 30px;
 }
-.thirdSentence{
-  opacity: 0;
-}
-/* 譛蛻昴��大� */
-.frImg{
-  width: 200px;
-  height: 200px;
-  margin: 5px auto;
-}
+
+
+

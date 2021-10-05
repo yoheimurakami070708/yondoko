@@ -200,3 +200,17 @@ h2{
   height: 200px;
   margin: 5px auto;
 }
+.frH{
+  text-align: center;
+  cursor: pointer;
+}
+.frH:hover::after {
+  content: '[x]';
+  font-size: 16px;
+  color: rgb(194, 188, 188);
+  margin-left: 4px;
+}
+.frA{
+  text-align: center;
+  cursor: pointer;
+}
