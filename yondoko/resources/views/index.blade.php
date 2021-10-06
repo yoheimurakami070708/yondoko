@@ -32,7 +32,7 @@
               Side Menu
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#nav-first">最初の１冊</a>
+              <a class="dropdown-item" href="#age">最初の１冊</a>
               <a class="dropdown-item" href="#">要約チャンネル</a>
               <a class="dropdown-item" href="#">読書アイテム</a>
             </div>
@@ -126,12 +126,12 @@
           <h2><a class="loginHead">Login</a></h2>
           <p class="firstSentence">YONDOKOは読書を始めるきっかけと習慣づくりのために作成しました。読書の素晴らしさを一人でも多くの人に知ってもらいたいです。</p>
           <p class="secondSentence">思考に気を付けなさい。サレはいつか言葉になるから。言葉に気をつけなさい。それはいつか行動になるから。行動に気をつけなさい。それはいつか習慣になるから。ーマザーテレサー</p>
-          <button type="submit" name="btn" class="btn  bg-light formBtn">
-          <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a>
+          <button type="submit" name="btn" class="btn  bg-info formBtn">
+          <a class="text-white" href="{{ route('login') }}">{{ __('ログイン') }}</a>
           
           </button>
           <p class="thirdSentence">
-          <a class="nav-link" href="{{ route('register') }}">{{ __('新規登録はこちら←') }}</a>
+          <a class="text-dark" href="{{ route('register') }}">{{ __('新規登録はこちら←') }}</a>
           </p>
         </div>
       </div>
@@ -266,7 +266,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption  d-md-block">
             <div class="containerText">
               <h2>最初の１冊</h2>
               <img src="images/menu1.png" alt="本を読む人">
@@ -279,7 +279,7 @@
           </svg>
         </div>
         <div class="carousel-item">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption  d-md-block">
             <div class="containerText center">
               <h2>要約サイト</h2>
               <img src="images/menu2.png" alt="youtube">
@@ -292,7 +292,7 @@
           </svg>
         </div>
         <div class="carousel-item">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption  d-md-block">
             <div class="containerText center">
               <h2>読書セット</h2>
               <img src="images/menu3.png" alt="道具">
@@ -323,7 +323,7 @@
     <div class="card-img-overlay bg-info">
       <h5 class="card-title">Writen by YOHEI MURAKAMI</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="https://yohei-portfolio.work/#link2" class="card-text">portfolio</a>
+      <a href="https://yohei-portfolio.work/#link2" class="text-white bg-info font-weight-bold">portfolio←</a>
     </div>
   </div>
 
