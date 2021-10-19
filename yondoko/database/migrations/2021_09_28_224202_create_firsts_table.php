@@ -14,7 +14,10 @@ class CreateFirstsTable extends Migration
     public function up()
     {
         Schema::create('firsts', function (Blueprint $table) {
-            $table->id();
+            $table->text('sex');
+            $table->text('age');
+            $table->text('category');
+            $table->text('history');
             $table->timestamps();
         });
     }

@@ -14,8 +14,10 @@ class CreateFavsTable extends Migration
     public function up()
     {
         Schema::create('favs', function (Blueprint $table) {
-            $table->id();
+            $table->integer('scores_id');
+            $table->integer('user_id');
             $table->timestamps();
+
         });
     }
 
