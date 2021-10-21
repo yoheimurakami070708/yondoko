@@ -32,4 +32,6 @@ Route::get('/home', [App\Http\Controllers\ScoresController::class, 'index',])->n
 Route::post('/fav',[\App\Http\Controllers\FavsController::class,'index'])->name('favs');
 Route::post('/first',[\App\Http\Controllers\FirstsController::class,'index'])->name('firsts');
 
+URL::forceScheme('https');
+
 // nameを指定することでcontrollerにすぐ接続できる
