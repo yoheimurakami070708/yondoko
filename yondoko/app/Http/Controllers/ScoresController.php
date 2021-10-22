@@ -106,6 +106,9 @@ class ScoresController extends Controller
         //     $level = "見習い";
         // }
         switch($sum){
+            case $sum >= 0;
+            $level="見習い";
+            break;
             case $sum >= 2500;
             $level="たまに読みます";
             break;
