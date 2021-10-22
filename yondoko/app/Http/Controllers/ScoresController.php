@@ -94,34 +94,18 @@ class ScoresController extends Controller
 
 
         $level = "見習い"; //デフォルトで書いてもらっているので
-        // if ($sum >= 12000) { //switch使った方が可読性が上がります。
-        //     $level = "歩く図書館";
-        // } elseif ($sum >= 8000) {
-        //     $level = "本の虫";
-        // } elseif ($sum >= 4000) {
-        //     $level = "読書家";
-        // } elseif ($sum >= 2500) {
-        //     $level = "たまに読みます";
-        // } elseif ($sum < 2500) { //ここは不要です
-        //     $level = "見習い";
-        // }
-        switch($sum){
-            case $sum >= 0;
-            $level="見習い";
-            break;
-            case $sum >= 2500;
-            $level="たまに読みます";
-            break;
-            case $sum >= 4000;
-            $level="読書家";
-            break;
-            case $sum >= 8000;
-            $level="本の虫";
-            break;
-            case $sum >= 12000;
-            $level="歩く図書館";
-            break;
+        if ($sum >= 12000) { //switch使った方が可読性が上がります。
+            $level = "歩く図書館";
+        } elseif ($sum >= 8000) {
+            $level = "本の虫";
+        } elseif ($sum >= 4000) {
+            $level = "読書家";
+        } elseif ($sum >= 2500) {
+            $level = "たまに読みます";
+        } elseif ($sum < 2500) { //ここは不要です
+            $level = "見習い";
         }
+
         // viewとの紐付け
 
         $payload = [
