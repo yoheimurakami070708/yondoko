@@ -106,18 +106,17 @@ class ScoresController extends Controller
         //     $level = "見習い";
         // }
         switch($sum){
-         
-            case $sum >= 8000;
-            $level="本の虫";
+            case $sum >= 2500;
+            $level="たまに読みます";
             break;
             case $sum >= 4000;
             $level="読書家";
             break;
-            case $sum >= 2500;
-            $level="たまに読みます";
+            case $sum >= 8000;
+            $level="本の虫";
             break;
-            case $sum < 2500;
-            $level="見習い";
+            case $sum >= 12000;
+            $level="歩く図書館";
             break;
         }
         // viewとの紐付け
