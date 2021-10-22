@@ -121,6 +121,9 @@ class ScoresController extends Controller
             case $sum < 2500;
             $level="見習い";
             break;
+            case $sum = 0;
+            $level="見習い";
+            break;
         }
         // viewとの紐付け
 
